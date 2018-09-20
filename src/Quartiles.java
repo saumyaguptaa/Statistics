@@ -24,14 +24,14 @@ public class Quartiles {
         int l = ar.length;
         Quartiles obj = new Quartiles();
         if(l%2 == 1) {
-            System.out.println((int)obj.returnQ(Arrays.copyOfRange(ar, 0, ((l-1)/2))));
-            System.out.println((int)ar[(l-1)/2]);
-            System.out.println((int)+obj.returnQ(Arrays.copyOfRange(ar, (l+1)/2, l)));    
+            System.out.println(obj.returnQ(Arrays.copyOfRange(ar, 0, ((l-1)/2))));
+            System.out.println(ar[(l-1)/2]);
+            System.out.println(obj.returnQ(Arrays.copyOfRange(ar, (l+1)/2, l)));    
         }
         else{
-            System.out.println((int)obj.returnQ(Arrays.copyOfRange(ar, 0, (l/2)-1)));
-            System.out.println((int)(ar[l/2]+ar[(l/2)-1])/2);
-            System.out.println((int)obj.returnQ(Arrays.copyOfRange(ar, (l/2)+1, l)));
+            System.out.println(obj.returnQ(Arrays.copyOfRange(ar, 0, (l/2)-1)));
+            System.out.println((ar[l/2]+ar[(l/2)-1])/2);
+            System.out.println(obj.returnQ(Arrays.copyOfRange(ar, (l/2)+1, l)));
             
         }
     }
